@@ -1,2 +1,51 @@
 # DFG-ArdAD9833
-Digital Frequency Generator using an Arduino and an AD9833.
+A Digital Frequency Generator using an Arduino Nano and an AD9833 Module.
+
+This is a quick and easy project to build a 0-1MHz digital frequency generator!
+
+Features
+- Uses a DollaTek AD9833 (+ MCP41010) module (SPI bus).
+- Sine and Square wave generation.
+- Frequency range 0 through 1MHz.
+- Full control via a KY-040 rotary encoder.
+- At a glance detail on a 20 column x 4 line LCD display (I2C bus).
+- Uses free Arduino libraries for all the hardware modules.
+
+## Rotary Encoder Controls
+- Turn the knob to inc/dec either the frequency or the gain.
+- Button long press to toggle frequency or gain control mode.
+- Button double-click to toggle sine and square wave output.
+- Button single click to change the freqency inc/dec step (freq mode).
+- Button single click to change the gain low/med/hi setting (gain mode).
+
+## Arduino Sketches
+### P1 Sketch
+Just the Rotary Encoder and the LCD modules are active.
+### P2 Sketch
+The DollaTek AD9833 and MCP41010 module is also active.
+
+## Hardware
+- Arduino Nano (my go-to Arduino board for quick projects).
+- DollaTek AD9833 frequency generator module with onboard MCP41010 and op-amp.
+  * https://www.amazon.co.uk/dp/B07DJT8Z49?psc=1&ref=ppx_yo2ov_dt_b_product_details.
+  * ![](DollaTekAD9833Module500.png)
+- KY-040 rotary encoder module.
+- HD44780 based 20x4 LCD display.
+- HW-061 I2C to HD44780 piggyback module.
+- Owon VDS1022i USB oscillosope with open source software.
+  * https://github.com/florentbr/OWON-VDS1022 
+
+## Circuit Design
+![](WaveGenAD9833v3.png)
+
+## Example Waveforms
+### Sine Wave
+![](WaveGen500kSine.png)
+### Square Wave
+![](WaveGen500kSquare.png)
+
+## YouTube...
+My project build, code explanation and demonstration on an oscilloscope here:
+ - https://youtu.be/ComingSoon...
+
+## **_Enjoy!_**
