@@ -66,6 +66,6 @@ _Blue trace: Raw AD9833 output / Red trace: Amplified output_
 
 ## YouTube...
 My project build, code explanation and demonstration on an oscilloscope here:
- - https://youtu.be/ComingSoon...
+ - https://youtu.be/_xULrCQb5uk
 
 ## **_Enjoy!_**
