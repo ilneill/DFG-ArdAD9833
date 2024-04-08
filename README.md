@@ -7,11 +7,12 @@ Features
 - Uses a DollaTek AD9833 (+ MCP41010) module (SPI bus).
 - Sine and Square wave generation.
 - Frequency range 0 through 1MHz.
+  * This is software bounded - for sine waves the AD9833 can reach 10MHz.
 - Full control via a KY-040 rotary encoder.
 - At a glance settings on a 20 column x 4 line LCD display (I2C bus).
-- Uses free Arduino libraries for all the hardware modules.
+- Uses open source Arduino libraries for all the hardware modules.
 
-![](MyArdAD9833Project.jpg) ![](WaveGen1kSquare.png)
+![](MyArdAD9833Project.jpg) ![](WaveGen1kSquare.jpg)
 
 ## Rotary Encoder Controls
 - Turn the knob to inc/dec either the frequency or the gain.
@@ -22,18 +23,21 @@ Features
 
 ## Arduino Sketches
 ### P1 Sketch
-Just the Rotary Encoder and the LCD modules are active.
+Halfway stage: Just the Rotary Encoder and the LCD modules are active.
 ### P2 Sketch
-The DollaTek AD9833 and MCP41010 module is also active.
+Complete: The DollaTek AD9833 and MCP41010 module is also active.
 
 ## Hardware
 - Arduino Nano (my go-to Arduino board for quick projects).
 - DollaTek AD9833 frequency generator module with onboard MCP41010 and op-amp.
-  * https://www.amazon.co.uk/dp/B07DJT8Z49?psc=1&ref=ppx_yo2ov_dt_b_product_details.
+  * https://www.amazon.co.uk/dp/B07DJT8Z49?psc=1&ref=ppx_yo2ov_dt_b_product_details
+    
   ![](DollaTekAD9833Module500.jpg)
 - KY-040 rotary encoder module.
+  
   ![](KY-040Module500.jpg)
 - HD44780 based 20x4 LCD display.
+  
   ![](LCD2004Module500.jpg)
 - HW-061 I2C to HD44780 piggyback module.
 - Owon VDS1022i USB oscillosope with open source software.
