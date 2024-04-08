@@ -23,8 +23,12 @@ Features
 
 ## Arduino Sketches
 ### P1 Sketch
+**_FreqGenADMCP-P1.ino_**
+
 Halfway stage: Just the Rotary Encoder and the LCD modules are active.
 ### P2 Sketch
+**_FreqGenADMCP-P2.ino_**
+
 Complete: The DollaTek AD9833 and MCP41010 module is also active.
 
 ## Hardware
