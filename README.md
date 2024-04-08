@@ -11,7 +11,7 @@ Features
 - At a glance settings on a 20 column x 4 line LCD display (I2C bus).
 - Uses free Arduino libraries for all the hardware modules.
 
-![](MyArdAD9833Project.jpg)
+![](MyArdAD9833Project.jpg) ![](WaveGen1kSquare.png)
 
 ## Rotary Encoder Controls
 - Turn the knob to inc/dec either the frequency or the gain.
@@ -43,9 +43,9 @@ The DollaTek AD9833 and MCP41010 module is also active.
 ![](WaveGenAD9833v3.png)
 
 ## Example Waveforms
-### Sine Wave
+### Sine Wave (500kHz)
 ![](WaveGen500kSine.png)
-### Square Wave
+### Square Wave (500kHz)
 ![](WaveGen500kSquare.png)
 
 ## YouTube...
