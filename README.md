@@ -48,6 +48,8 @@ Complete: The DollaTek AD9833 and MCP41010 module is also active.
   * https://github.com/florentbr/OWON-VDS1022 
 
 ## Circuit Design
+**_WaveGenAD9833v3.fzz_**
+
 ![](WaveGenAD9833v3.png)
 
 ## Example Waveforms
