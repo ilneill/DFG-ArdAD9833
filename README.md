@@ -12,6 +12,8 @@ Features
 - At a glance settings on a 20 column x 4 line LCD display (I2C bus).
 - Uses open source Arduino libraries for all the hardware modules.
 
+_Blue trace: Raw AD9833 output / Red trace: Amplified output_
+
 ![](MyArdAD9833Project.jpg) ![](WaveGen1kSquare.jpg)
 
 ## Rotary Encoder Controls
@@ -54,8 +56,12 @@ Complete: The DollaTek AD9833 and MCP41010 module is also active.
 
 ## Example Waveforms
 ### Sine Wave (500kHz)
+_Blue trace: Raw AD9833 output / Red trace: Amplified output_
+
 ![](WaveGen500kSine.png)
 ### Square Wave (500kHz)
+_Blue trace: Raw AD9833 output / Red trace: Amplified output_
+
 ![](WaveGen500kSquare.png)
 
 ## YouTube...
