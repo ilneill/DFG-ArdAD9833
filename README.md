@@ -1,13 +1,14 @@
 # DFG-ArdAD9833
 A Digital Frequency Generator using an Arduino Nano and an AD9833 Module.
 
-This is a quick and easy project to build a 0-1MHz digital frequency generator!
+This is a quick and easy project to build a 0 - 12.5MHz digital frequency generator!
 
 Features
 - Uses a DollaTek AD9833 (+ MCP41010) module (SPI bus).
 - Sine and Square wave generation.
-- Frequency range 0 through 1MHz.
-  * This is software bounded - for sine waves the AD9833 can reach 10MHz.
+- Frequency range 0 - 1.0MHz - software limited for sine waves in the P2 sketch.
+- Frequency range 0 - 1.0MHz (square waves) and 0 through 12.5MHz (sine waves) - P3 sketch.
+- Raw and amplified (with gain control) wave outputs.
 - Full control via a KY-040 rotary encoder.
 - At a glance settings on a 20 column x 4 line LCD display (I2C bus).
 - Uses open source Arduino libraries for all the hardware modules.
@@ -28,10 +29,20 @@ _Blue trace: Raw AD9833 output / Red trace: Amplified output_
 **_FreqGenADMCP-P1.ino_**
 
 Halfway stage: Just the Rotary Encoder and the LCD modules are active.
+
+_This is shown in the accompanying YouTube video (link below)._
 ### P2 Sketch
 **_FreqGenADMCP-P2.ino_**
 
 Complete: The DollaTek AD9833 and MCP41010 module is also active.
+
+_This is shown in the accompanying YouTube video (link below)._
+### P3 Sketch
+**_FreqGenADMCP-P3.ino_**
+
+Updated: The DollaTek AD9833 and MCP41010 module with up to 1.0MHz square and 12.5MHz sine wave support.
+
+_This update was completed after the YouTube video was made._
 
 ## Hardware
 - Arduino Nano (my go-to Arduino board for quick projects).
