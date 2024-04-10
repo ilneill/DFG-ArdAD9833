@@ -55,7 +55,7 @@ _This update was completed after the YouTube video was made._
 
 ## Hardware
 - Arduino Nano (my go-to Arduino board for quick projects).
-- DollaTek AD9833 frequency generator module with onboard MCP41010 and op-amp.
+- DollaTek AD9833 frequency generator module with onboard MCP41010 and AD8051 op-amp.
   * https://www.amazon.co.uk/dp/B07DJT8Z49?psc=1&ref=ppx_yo2ov_dt_b_product_details
     
   ![](DollaTekAD9833Module500.jpg)
