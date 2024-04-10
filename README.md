@@ -5,24 +5,27 @@ This is a quick and easy project to build a 0 - 12.5MHz digital frequency genera
 
 Features
 - Uses a DollaTek AD9833 (+ MCP41010) module (SPI bus).
-- Sine and Square wave generation.
-- Frequency range 0 - 1.0MHz - software limited for sine waves in the P2 sketch.
-- Frequency range 0 - 1.0MHz (square waves) and 0 through 12.5MHz (sine waves) - P3 sketch.
+- Sine, square and triangle wave generation.
+- Frequency range 0 - 1.0MHz square and sine waves (software limited for sine waves) - P2 sketch.
+- Frequency range 0 - 1.0MHz (square waves) and 0 - 12.5MHz (sine waves) - P3 sketch.
+- Frequency range 0 - 1.0MHz (square and triangle waves) and 0 - 12.5MHz (sine waves) - P4 sketch.
 - Raw and amplified (with gain control) wave outputs.
 - Full control via a KY-040 rotary encoder.
-- At a glance settings on a 20 column x 4 line LCD display (I2C bus).
+- At a glance settings all on a 20 column x 4 line LCD display (I2C bus).
 - Uses open source Arduino libraries for all the hardware modules.
 
 _Blue trace: Raw AD9833 output / Red trace: Amplified output_
 
-![](MyArdAD9833Project.jpg) ![](WaveGen1kSquare.jpg)
+![](WaveGen1kSquare.jpg)
+
+![](MyArdAD9833Project.jpg) ![](BreadBoardCloseUp500.jpg)
 
 ## Rotary Encoder Controls
 - Turn the knob to inc/dec either the frequency or the gain.
 - Button long press to toggle frequency or gain control mode.
-- Button double-click to toggle sine and square wave output.
+- Button double-click to cycle through sine, square and triangle wave output.
 - Button single click to change the freqency inc/dec step (freq mode).
-- Button single click to change the gain low/med/hi setting (gain mode).
+- Button single click to change the gain low/mid/high setting (gain mode).
 
 ## Arduino Sketches
 ### P1 Sketch
@@ -40,7 +43,13 @@ _This is shown in the accompanying YouTube video (link below)._
 ### P3 Sketch
 **_FreqGenADMCP-P3.ino_**
 
-Updated: The DollaTek AD9833 and MCP41010 module with up to 1.0MHz square and 12.5MHz sine wave support.
+Update 1: The DollaTek AD9833 and MCP41010 module with up to 1.0MHz square and 12.5MHz sine waves.
+
+_This update was completed after the YouTube video was made._
+### P4 Sketch
+**_FreqGenADMCP-P4.ino_**
+
+Update 2: The DollaTek AD9833 and MCP41010 module with up to 1.0MHz square and triangle waves, and 12.5MHz sine waves.
 
 _This update was completed after the YouTube video was made._
 
@@ -70,13 +79,34 @@ _This update was completed after the YouTube video was made._
 _Blue trace: Raw AD9833 output / Red trace: Amplified output_
 
 ![](WaveGen500kSine.png)
+
+### Sine Wave (2.5MHz)
+_Blue trace: Raw AD9833 output / Yellow trace: Amplified output_
+
+![](WaveGen2-5MSine500.jpg)
+
+### Sine Wave (4.0MHz)
+_Blue trace: Raw AD9833 output / Yello trace: Amplified output_
+
+![](WaveGen4MSine500.jpg)
+
 ### Square Wave (500kHz)
 _Blue trace: Raw AD9833 output / Red trace: Amplified output_
 
 ![](WaveGen500kSquare.png)
 
+### Square Wave (1.0MHz)
+_Blue trace: Raw AD9833 output / Yellow trace: Amplified output_
+
+![](WaveGen1MSquare500.jpg)
+
+### Triangle Wave (1.0MHz)
+_Blue trace: Raw AD9833 output / Yellow trace: Amplified output_
+
+![](WaveGen1MTriangle500.jpg)
+
 ## YouTube...
-My project build, code explanation and demonstration on an oscilloscope here:
+My project build, code explanation (P1 and P2 sketches) and demonstration on an Owon VDS1022i oscilloscope here:
  - https://youtu.be/_xULrCQb5uk
 
 ## **_Enjoy!_**
